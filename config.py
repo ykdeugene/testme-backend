@@ -1,11 +1,13 @@
 class Config:
-    MONGO_URI = "mongodb://localhost:27017/mydatabase"
+    MONGO_URI = "mongodb://root:password@localhost:27017/testme?authSource=admin"
     FRONTEND_URL = "localhost:3000"
-    HOST = "localhost"
+    HOST = "127.0.0.1"
     PORT = 5000
 
+
 class DevConfig(Config):
-    DEBUG=True
+    DEBUG = True
+
 
 class ProdConfig(Config):
-    DEBUG=False
+    DEBUG = False
