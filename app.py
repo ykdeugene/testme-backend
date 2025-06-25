@@ -1,6 +1,7 @@
 # external imports
 from flask import Flask
 from flask_pymongo import PyMongo
+from pymongo.errors import ConnectionFailure
 from flask_cors import CORS
 
 # internal imports
@@ -15,6 +16,13 @@ CORS(app)
 
 # initialize mongo
 mongo = PyMongo(app)
+
+try:
+    mongo.db.command("ping")
+    print("MongoDB connection successful!")
+except ConnectionFailure:
+    print("MongoDB connection failed!")
+    exit(1)
 
 # define and register blueprints
 mcq_blueprint = create_mcq_blueprint(mongo)
