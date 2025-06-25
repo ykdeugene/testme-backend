@@ -1,0 +1,90 @@
+{
+  "topic": "Cybersecurity - General Security Concepts",
+  "mcq": [
+    {
+      "question": "Felicia wants to deploy an encryption solution that will protect files in motion as they are copied between file shares as well as at rest, and also needs it to support granular, per- user security. What type of solution should she select? ?",
+      "options": [
+        "File encryption ",
+        "Partition encryption",
+        "Full-disk encryption",
+        "Record-level encryption"
+      ]
+    },
+    {
+      "question": "Valerie wants to use a certificate to handle multiple subdomains for her website, including the sales.example.com and support.example.com subdomains. What type of certifi- cate should she use?",
+      "options": [
+        "A wildcard certificate",
+        "A self- signed certificate",
+        "A root of trust certificate",
+        "A CRL certificate"
+      ]
+    },
+    {
+      "question": "What information is analyzed during a gap analysis?",
+      "options": [
+        "Control objectives and controls intended to meet the objectives",
+        "Physically separate networks and their potential connection points",
+        "Compensating controls and the controls they are replacing",
+        "Security procedures and the policies they are designed to support"
+      ]
+    },
+    {
+      "question": "Susan’s team has recommended an application restart for a production, customer-facing application as part of an urgent patch due to a security update. What technical implication is the most common concern when conducting an application restart?",
+      "options": [
+        "The downtime during the restart",
+        "Application configuration changes caused by the restart",
+        "Whether the patch will properly apply",
+        "Lack of security controls during the restart"
+      ]
+    },
+    {
+      "question": "Using a tool like git is most frequently associated with what critical change management process?",
+      "options": [
+        "Version control",
+        "Having a backout plan",
+        "Stakeholder analysis",
+        "Standard operating procedures (SOPs)"
+      ]
+    },
+    {
+      "question": "Jacob is concerned that the password used for one of his organization’s services is weak, and he wants to make it harder to crack by making it harder to test possible keys during a brute-force attack. What is this technique called?",
+      "options": [
+        "Key stretching",
+        "Master keying",
+        "Key rotation",
+        "Passphrase armoring"
+      ]
+    },
+    {
+      "question": "Log monitoring is an example of what control category?",
+      "options": ["Operational", "Managerial", "Technical", "Physical"]
+    },
+    {
+      "question": "Rick wants to make offline brute-force attacks against his password file very difficult for attackers. Which of the following is not a common technique to make passwords harder to crack?",
+      "options": [
+        "Encrypting password plain text using symmetric encryption",
+        "Use of a salt",
+        "Use of a pepper",
+        "Use of a purpose-built password hashing algorithm"
+      ]
+    },
+    {
+      "question": "Diffie–Hellman and RSA are both examples of what important encryption-related solution?",
+      "options": [
+        "Key exchange algorithms",
+        "Rekeying",
+        "Certificate revocation protocols",
+        "Key generation algorithms"
+      ]
+    },
+    {
+      "question": "Sally wants to ensure that her change management process includes a procedure for what to do if the change fails. What should she create to handle this possibility?",
+      "options": [
+        "A backout plan",
+        "An impact analysis",
+        "A regression test",
+        "A maintenance window"
+      ]
+    }
+  ]
+}
