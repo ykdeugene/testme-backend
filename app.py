@@ -1,10 +1,28 @@
+# external imports
 from flask import Flask
+from flask_pymongo import PyMongo
+from flask_cors import CORS
 
+# internal imports
+from config import DevConfig
+from routes.mcq import create_mcq_blueprint
+
+# initialize Flask and config
 app = Flask(__name__)
+app.config.from_object(DevConfig)
+CORS(app)
+# CORS(app, origins=[app.config["FRONTEND_URL"]])
 
-@app.route('/')
-def index():
-    return "Hello World"
+# initialize mongo
+mongo = PyMongo(app)
+
+# define and register blueprints
+mcq_blueprint = create_mcq_blueprint(mongo)
+app.register_blueprint(mcq_blueprint, url_prefix="/mcq")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        host=app.config["HOST"],
+        port=app.config["PORT"],
+        debug=app.config.get("DEBUG", False),
+    )
