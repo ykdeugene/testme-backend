@@ -11,8 +11,7 @@ from routes.mcq import create_mcq_blueprint
 # initialize Flask and config
 app = Flask(__name__)
 app.config.from_object(DevConfig)
-CORS(app)
-# CORS(app, origins=[app.config["FRONTEND_URL"]])
+CORS(app, origins=[app.config["FRONTEND_URL"]])
 
 # initialize mongo
 mongo = PyMongo(app)

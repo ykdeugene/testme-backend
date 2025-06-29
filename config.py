@@ -1,6 +1,6 @@
 class Config:
     MONGO_URI = "mongodb://root:password@localhost:27017/testme?authSource=admin"
-    FRONTEND_URL = "localhost:3000"
+    FRONTEND_URL = "http://127.0.0.1:3000"
     HOST = "127.0.0.1"
     PORT = 5000
 
